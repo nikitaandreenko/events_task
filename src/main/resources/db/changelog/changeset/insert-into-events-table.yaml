@@ -1,0 +1,89 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-into-events
+      author: Andreyenka Mikita
+      changes:
+        - insert:
+            tableName: events
+            columns:
+              - column:
+                  name: topic
+                  value: "WEDDING"
+              - column:
+                  name: description
+                  value: "wedding between Collin Gerber and Jessy Peterson"
+              - column:
+                  name: date_time
+                  value: "2022-12-25 17:00"
+              - column:
+                  name: organizer_id
+                  value: "1"
+              - column:
+                  name: location_id
+                  value: "1"
+              - column:
+                  name: status
+                  value: "IN_WORK"
+        - insert:
+            tableName: events
+            columns:
+              - column:
+                  name: topic
+                  value: "CORPORATE"
+              - column:
+                  name: description
+                  value: "Corporate football club Chelsea"
+              - column:
+                  name: date_time
+                  value: "2022-12-30 20:00"
+              - column:
+                  name: organizer_id
+                  value: "1"
+              - column:
+                  name: location_id
+                  value: "2"
+              - column:
+                  name: status
+                  value: "IN_WORK"
+        - insert:
+            tableName: events
+            columns:
+              - column:
+                  name: topic
+                  value: "BIRTHDAY"
+              - column:
+                  name: description
+                  value: "Birthday Samanta Lenny"
+              - column:
+                  name: date_time
+                  value: "2022-11-13 19:00"
+              - column:
+                  name: organizer_id
+                  value: "1"
+              - column:
+                  name: location_id
+                  value: "3"
+              - column:
+                  name: status
+                  value: "IN_WORK"
+        - insert:
+            tableName: events
+            columns:
+              - column:
+                  name: topic
+                  value: "CONFERENCE"
+              - column:
+                  name: description
+                  value: "Conference Global Warming"
+              - column:
+                  name: date_time
+                  value: "2022-10-20 10:00"
+              - column:
+                  name: organizer_id
+                  value: "1"
+              - column:
+                  name: location_id
+                  value: "4"
+              - column:
+                  name: status
+                  value: "IN_WORK"

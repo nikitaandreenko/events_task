@@ -1,0 +1,41 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-into-locations
+      author: Andreyenka Mikita
+      changes:
+        - insert:
+            tableName: locations
+            columns:
+              - column:
+                  name: name
+                  value: "Ochre"
+              - column:
+                  name: address_id
+                  value: "2"
+        - insert:
+            tableName: locations
+            columns:
+              - column:
+                  name: name
+                  value: "Devine Restaurant Coffee Bar"
+              - column:
+                  name: address_id
+                  value: "3"
+        - insert:
+            tableName: locations
+            columns:
+              - column:
+                  name: name
+                  value: "Fishcotheque"
+              - column:
+                  name: address_id
+                  value: "4"
+        - insert:
+            tableName: locations
+            columns:
+              - column:
+                  name: name
+                  value: "Bonoo Indian Tapas"
+              - column:
+                  name: address_id
+                  value: "5"

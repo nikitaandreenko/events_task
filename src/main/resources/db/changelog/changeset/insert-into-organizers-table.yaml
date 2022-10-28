@@ -1,0 +1,20 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-into-organizers
+      author: Andreyenka Mikita
+      changes:
+        - insert:
+            tableName: organizers
+            columns:
+              - column:
+                  name: name
+                  value: "Quirky Group"
+              - column:
+                  name: email
+                  value: "hello@quirky-group.co.uk"
+              - column:
+                  name: phone_number
+                  value: "+44 (0)77 6548 4442"
+              - column:
+                  name: address_id
+                  value: "1"

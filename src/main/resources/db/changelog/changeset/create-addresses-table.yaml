@@ -1,0 +1,42 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-addresses
+      author: Andreyenka Mikita
+      changes:
+        - createTable:
+            tableName: addresses
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: country
+                  type: varchar(100)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: city
+                  type: varchar(100)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: street
+                  type: varchar(100)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: house
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+                  defaultValue: '-'
+              - column:
+                  name: room
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+                  defaultValue: '-'

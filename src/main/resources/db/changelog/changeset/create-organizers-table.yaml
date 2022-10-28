@@ -1,0 +1,39 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-organizers
+      author: Andreyenka Mikita
+      changes:
+        - createTable:
+            tableName: organizers
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: name
+                  type: varchar(100)
+                  constraints:
+                    nullable: false
+                    unique: true
+              - column:
+                  name: email
+                  type: varchar(100)
+                  constraints:
+                    nullable: false
+                    unique: true
+              - column:
+                  name: phone_number
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: address_id
+                  type: bigint
+                  constraints:
+                    foreignKeyName: address_organizer_fk
+                    referencedTableName: addresses
+                    referencedColumnNames: id

@@ -1,0 +1,95 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-into-addresses
+      author: Andreyenka Mikita
+      changes:
+        - insert:
+            tableName: addresses
+            columns:
+              - column:
+                  name: country
+                  value: "England"
+              - column:
+                  name: city
+                  value: "London"
+              - column:
+                  name: street
+                  value: "Lombard Road"
+              - column:
+                  name: house
+                  value: "8"
+              - column:
+                  name: room
+                  value: "-"
+        - insert:
+            tableName: addresses
+            columns:
+              - column:
+                  name: country
+                  value: "England"
+              - column:
+                  name: city
+                  value: "London"
+              - column:
+                  name: street
+                  value: "Trafalgar Square"
+              - column:
+                  name: house
+                  value: "5"
+              - column:
+                  name: room
+                  value: "-"
+        - insert:
+            tableName: addresses
+            columns:
+              - column:
+                  name: country
+                  value: "England"
+              - column:
+                  name: city
+                  value: "London"
+              - column:
+                  name: street
+                  value: "Vine Street"
+              - column:
+                  name: house
+                  value: "19"
+              - column:
+                  name: room
+                  value: "-"
+        - insert:
+            tableName: addresses
+            columns:
+              - column:
+                  name: country
+                  value: "England"
+              - column:
+                  name: city
+                  value: "London"
+              - column:
+                  name: street
+                  value: "Waterloo Road"
+              - column:
+                  name: house
+                  value: "79"
+              - column:
+                  name: room
+                  value: "-"
+        - insert:
+            tableName: addresses
+            columns:
+              - column:
+                  name: country
+                  value: "England"
+              - column:
+                  name: city
+                  value: "London"
+              - column:
+                  name: street
+                  value: "Finchley Road"
+              - column:
+                  name: house
+                  value: "675"
+              - column:
+                  name: room
+                  value: "-"
