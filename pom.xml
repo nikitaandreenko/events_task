@@ -9,10 +9,10 @@
 		<relativePath/>
 	</parent>
 	<groupId>com.andreyenka</groupId>
-	<artifactId>modsen-test-task</artifactId>
+	<artifactId>events</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>modsen-test-task</name>
-	<description>Test task for Modsen</description>
+	<name>events</name>
+	<description>Test task Events</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>

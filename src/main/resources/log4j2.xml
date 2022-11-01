@@ -11,7 +11,7 @@
         </File>
     </Appenders>
     <Loggers>
-        <Logger name="com.andreyenka.modsentesttask.service.impl.EventServiceImpl" level="debug">
+        <Logger name="com.andreyenka.eventstask.service.impl.EventServiceImpl" level="debug">
             <AppenderRef ref="LogToConsole"/>
             <AppenderRef ref="LogToFile"/>
         </Logger>
